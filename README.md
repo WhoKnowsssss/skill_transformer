@@ -23,19 +23,20 @@ Important hyperparameters and options can be found in `habitat_baselines/config/
 * `TRANSFORMER`: Hyperparameters
 
 ### Collect dataset with DDPPO expert (Habitat 2.0)
-* run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/tp_srl_oracle_plan.yaml --run-type eval`
+* Run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/tp_srl_oracle_plan.yaml --run-type eval`
 * Add following arguments: 
   * `TEST_EPISODE_COUNT num_episodes`
   * `DATASET_SAVE_PATH path_to_your_dataset` 
   * `TASK_CONFIG.SEED seed TASK_CONFIG.SIMULATOR.SEED seed`
 
 ### Train Skill Transformer
-* run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/transformer.yaml --run-type train`
+* Add the path to dataset in the config file
+* Run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/transformer.yaml --run-type train`
 * Add following arguments: 
   * `TASK_CONFIG.SEED seed TASK_CONFIG.SIMULATOR.SEED seed`
 
 ### Evaluate Skill Transformer
-* run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/transformer.yaml --run-type eval`
+* Run `python habitat_baselines/run.py --exp-config habitat_baselines/config/rearrange/hab/transformer.yaml --run-type eval`
 * Add following arguments: 
   * `TASK_CONFIG.SEED seed TASK_CONFIG.SIMULATOR.SEED seed`
 
