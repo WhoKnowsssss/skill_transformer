@@ -1,6 +1,6 @@
 # Skill Transformer: A Monolithic Policy for Mobile Manipulation
 
-This is the official PyTorch code implementation for ["Skill Transformer: A Monolithic Policy for Mobile Manipulation"].
+This is the official PyTorch code implementation for ["Skill Transformer: A Monolithic Policy for Mobile Manipulation"](https://arxiv.org/pdf/2308.09873.pdf).
 
 ## Installation
 Refer to [Habitat-Lab](https://github.com/facebookresearch/habitat-lab) repo for installation. 
@@ -52,7 +52,12 @@ Structure of the code under `habitat_baselines/transformer_policy`:
 
 # Citation
 ```
-pending
+@article{huang2023skill,
+  title={Skill Transformer: A Monolithic Policy for Mobile Manipulation},
+  author={Huang, Xiaoyu and Batra, Dhruv and Rai, Akshara and Szot, Andrew},
+  journal={arXiv preprint arXiv:2308.09873},
+  year={2023}
+}
 ```
 
 # License
